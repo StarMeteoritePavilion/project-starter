@@ -1,5 +1,5 @@
 # project-starter
-spring boot starter
+a develop kit about spring boot starter
 
 ## transaction-starter
 
