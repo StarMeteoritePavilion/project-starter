@@ -1,0 +1,2 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.lcn29.starter.transaction.TransactionAdviceConfiguration
