@@ -21,6 +21,7 @@
 
     <properties>
         <revision>0.0.1-SNAPSHOT</revision>
+        <common-web.version>0.0.1-SNAPSHOT</common-web.version>
     </properties>
 
     <dependencyManagement>
@@ -35,6 +36,12 @@
                 <groupId>com.lcn29</groupId>
                 <artifactId>security-starter</artifactId>
                 <version>${revision}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.lcn29</groupId>
+                <artifactId>common-web</artifactId>
+                <version>${common-web.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
