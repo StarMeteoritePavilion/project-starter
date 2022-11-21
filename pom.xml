@@ -7,41 +7,28 @@
     <parent>
         <groupId>com.lcn29</groupId>
         <artifactId>project-dependencies</artifactId>
-        <version>1.0.0.RELEASE</version>
+        <version>0.0.1-SNAPSHOT</version>
     </parent>
 
     <artifactId>project-starter</artifactId>
     <version>${revision}</version>
     <packaging>pom</packaging>
 
-    <modules>
-        <module>transaction-starter</module>
-        <module>security-starter</module>
-    </modules>
-
     <properties>
         <revision>0.0.1-SNAPSHOT</revision>
-        <common-web.version>0.0.1-SNAPSHOT</common-web.version>
+        <redis-starter.version>0.0.1-SNAPSHOT</redis-starter.version>
     </properties>
+
+    <modules>
+        <module>redis-starter</module>
+    </modules>
 
     <dependencyManagement>
         <dependencies>
             <dependency>
                 <groupId>com.lcn29</groupId>
-                <artifactId>transaction-starter</artifactId>
-                <version>${revision}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>com.lcn29</groupId>
-                <artifactId>security-starter</artifactId>
-                <version>${revision}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>com.lcn29</groupId>
-                <artifactId>common-web</artifactId>
-                <version>${common-web.version}</version>
+                <artifactId>project-starter</artifactId>
+                <version>${redis-starter.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
